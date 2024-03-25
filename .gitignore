@@ -1,0 +1,17 @@
+*.png
+*.pdf
+*.rds
+*.gz
+*.odp
+*.csv
+*.txt
+*.tsv
+
+combineDataLayers/*
+
+.RData
+.Rhistory
+Analysis_2023.Rproj
+.Rproj.user
+
+
