@@ -4,9 +4,8 @@
 ###
 ###############################################
 
-setwd("~/Dropbox/0_Work/0_Projects/01_Ageing/Analysis_2023/")
 source("customFunctions.R")
-setwd("mouseMetagenome/")
+setwd("databases/")
 
 
 ################
@@ -14,7 +13,7 @@ setwd("mouseMetagenome/")
 
 ## subsystem annotations from gapseq models by CK Feb2022
 # Load mapping from "pathway IDs" to "clear names"
-df_ModelSubsysNameMapping <- read.table(file = "../databases/gapseqPathwayIDsToNames.csv",
+df_ModelSubsysNameMapping <- read.table(file = "./gapseqPathwayIDsToNames.csv",
                                         header = T, stringsAsFactors = F, sep = "\t", quote = "", fill = TRUE)
 void_extractSubsys <- function(lst_obj_models, str_fileName = "subsysMap"){
   mapping <- df_ModelSubsysNameMapping
@@ -181,7 +180,7 @@ df_rxn2subsys$SubsystemSplit <- str_simplifyDescriptions(df_rxn2subsys$Subsystem
 # oder by SubsysID, and reorder columns
 df_rxn2subsys <- df_rxn2subsys[order(df_rxn2subsys$SubsysID),c("SubsysID", "ReactionID", "Subsystem", "SubsystemSplit")]
 # save
-saveRDS(df_rxn2subsys,"../databases/df_rxn2subsys20230510MetaMouse.rds")
+saveRDS(df_rxn2subsys,"./df_rxn2subsys20230510MetaMouse.rds")
 rm(lst_rxn2subsys, df_ModelSubsysNameMapping, obj_metabolicModelsMouse202305)
 
 

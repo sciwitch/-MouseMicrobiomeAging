@@ -9,8 +9,8 @@
 ################
 ##
 library(DESeq2)
-source("~/Dropbox/0_Work/0_Projects/01_Ageing/Analysis_2023/customFunctions.R")
-setwd("~/Dropbox/0_Work/0_Projects/01_Ageing/Analysis_2023/mouseTranscriptome/")
+source("customFunctions.R")
+setwd("mouseTranscriptome/")
 
 
 ########

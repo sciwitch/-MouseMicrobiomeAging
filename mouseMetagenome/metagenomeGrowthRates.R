@@ -7,7 +7,6 @@
 library(RColorBrewer)
 library(clusterProfiler)
 
-setwd("~/Dropbox/0_Work/0_Projects/01_Ageing/Analysis_2023/")
 source("customFunctions.R")
 setwd("mouseMetagenome/")
 
