@@ -14,7 +14,7 @@ require(stats)
 require("GO.db")
 
 ###
-setwd("~/Dropbox/0_Work/0_Projects/01_Ageing/Analysis_2023/")
+setwd(".")
 ###
 
 #######################################

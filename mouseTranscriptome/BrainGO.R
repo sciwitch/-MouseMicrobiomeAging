@@ -1,6 +1,6 @@
 ############################################################
 ###
-###   WGCNA co-expression modules for Brain genes
+###   Gene Ontology enrichment for Brain genes
 ###
 ############################################################
 

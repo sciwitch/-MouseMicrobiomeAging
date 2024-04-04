@@ -1,6 +1,6 @@
 ############################################################
 ###
-###   WGCNA co-expression modules for Liver genes
+###   Gene Ontology enrichment for Liver genes
 ###
 ############################################################
 

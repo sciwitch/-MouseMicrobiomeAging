@@ -1,6 +1,6 @@
 ############################################################
 ###
-###   WGCNA co-expression modules for Colon genes
+###   Gene Ontology enrichment for Colon genes
 ###
 ############################################################
 
@@ -28,7 +28,7 @@ df_DifAbundColonAllAges
 ### GO enrichment
 ## Positive Correlations Genes
 obj_Gene2GOPositive <- enricher(gene = unique(na.omit(df_DifAbundColonAllAges[df_DifAbundColonAllAges$padj <= 0.05 &
-                                                                                df_DifAbundColonAllAges$log2FoldChange > 0,"GeneSymbol"])),
+                                                                              df_DifAbundColonAllAges$log2FoldChange > 0,"GeneSymbol"])),
                                 minGSSize = 10, maxGSSize = 500, pAdjustMethod = "BH",
                                 TERM2GENE = df_mouseGOannotaionBioProc[,c("GOid","GeneSymbol")],
                                 TERM2NAME = df_mouseGOannotaionBioProc[,c("GOid","Description")],
